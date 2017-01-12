@@ -1,11 +1,17 @@
 <div class="container-fluid">
 	<div class="row">
 		<div class="col-sm-2">
-			Search: <input ng-model="$ctrl.query">
+			<p>Search: <input ng-model="$ctrl.query"></p>
+			<p>
+				Sort By: <select ng-model="$ctrl.orderBy">
+					<option value="age">Newest</option>
+					<option value="name">Alphabetical</option>	
+				</select>
+			</p>
 		</div>
 		<div class="col-sm-10">
 			<ul>
-				<li ng-repeat="phone in $ctrl.phones | filter: $ctrl.query">
+				<li ng-repeat="phone in $ctrl.phones | filter: $ctrl.query | orderBy: $ctrl.orderBy">
 				<span>{{phone.name}}</span>
 				<p>{{phone.snippet}}</p>
 				</li>
