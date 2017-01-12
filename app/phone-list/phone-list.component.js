@@ -14,6 +14,9 @@ angular
 		    }, {
 		      name: 'MOTOROLA XOOM™',
 		      snippet: 'The Next, Next Generation tablet.'
+		    }, {
+		    	name: "test",
+		    	snippet: "abcd"
 		    }
 		  ];
 		}
