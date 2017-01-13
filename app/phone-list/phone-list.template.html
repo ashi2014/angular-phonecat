@@ -12,8 +12,9 @@
 		<div class="col-sm-10">
 			<ul>
 				<li ng-repeat="phone in $ctrl.phones | filter: $ctrl.query | orderBy: $ctrl.orderBy">
-				<span>{{phone.name}}</span>
-				<p>{{phone.snippet}}</p>
+					<a href="#/phones/{{phone.id}}"><img ng-src={{phone.imageUrl}}></a>
+					<a href="#/phones/{{phone.id}}">{{phone.name}}</a>
+					<p>{{phone.snippet}}</p>
 				</li>
 			</ul>
 		</div>
