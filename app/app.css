@@ -1,0 +1,35 @@
+.mainImage {
+
+}
+
+.phone-thumbs {
+	list-style: none;
+	padding: 0px;
+}
+
+.thumb {
+	display: inline-block;
+	padding-right: 3px;
+}
+
+.thumb img {
+	border: 1px solid black;
+	height: 100px;
+	width: 100px;
+}
+
+.specs {
+	list-style: none;
+	margin-top: 30px;
+}
+
+.specs li {
+	display: inline-block;
+	vertical-align: top;
+	width: 200px;
+}
+
+.specs span {
+	font-size: 1.2em;
+	font-weight: bold
+}
