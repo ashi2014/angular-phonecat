@@ -10,10 +10,10 @@
 			</p>
 		</div>
 		<div class="col-sm-10">
-			<ul>
+			<ul class="phones">
 				<li ng-repeat="phone in $ctrl.phones | filter: $ctrl.query | orderBy: $ctrl.orderBy">
 					<a href="#!/phones/{{phone.id}}">
-						<img ng-src={{phone.imageUrl}}>
+						<img ng-src={{phone.imageUrl}} class="phone-icon">
 					</a>
 					<a href="#!/phones/{{phone.id}}">{{phone.name}}</a>
 					<p>{{phone.snippet}}</p>
